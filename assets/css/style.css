@@ -4,7 +4,7 @@
 
 :root {
     --primary-color: #0f1b4c;
-    --bg-color: orange; /* #F5FAFE; */
+    --bg-color:  #F5FAFE; 
 }
 
 html {
@@ -61,17 +61,28 @@ a {
 }
 
 /* Header */
-.header {
+.fixed-header {
+    background-color: orange;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 2;
+}
+
+.hero-wrap {
+    display: flex; 
+    flex-direction: column;
     /* background-color: #e6f0ff; */
     background: var(--bg-color);
-    height: 100vh;
+    height: calc(100vh - 90px);
     position: relative;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0px;
+    /* background-color: blue; */
 }
 
 .navbar ul {
@@ -146,7 +157,7 @@ a {
 
 .hero-img {
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     right: calc(((100vw - 1110px) / 2) - 100px);
 }
 
@@ -183,7 +194,7 @@ a {
 .clients .images a {
     display: flex;
     align-items: center;
-    height: 90px;
+    height: 91px;
     padding: 0px 42px;
     /* background-color: green; */
     border-radius: 12px;
