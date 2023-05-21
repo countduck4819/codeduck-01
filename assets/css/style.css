@@ -7,6 +7,10 @@
     --bg-color:  #F5FAFE; 
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
