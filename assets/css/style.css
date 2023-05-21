@@ -4,10 +4,11 @@
 
 :root {
     --primary-color: #0f1b4c;
-    --bg-color:  #F5FAFE; 
+    --bg-color: #f5fafe;
 }
 
-html, body {
+html,
+body {
     scroll-behavior: smooth;
 }
 
@@ -74,8 +75,9 @@ a {
 }
 
 .hero-wrap {
-    display: flex; 
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     /* background-color: #e6f0ff; */
     background: var(--bg-color);
     height: calc(100vh - 90px);
@@ -120,10 +122,6 @@ a {
     margin-left: 18px;
     border-radius: 8px;
     font-size: 1.4rem;
-}
-
-.hero {
-    margin-top: 130px;
 }
 
 .hero .info {
